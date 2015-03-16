@@ -5,6 +5,8 @@
  */
 package examencodtwitter;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author dcuerdogarcia
@@ -17,9 +19,9 @@ public class ExamenCodTwitter {
     public static void main(String[] args) {
         int op;
         Metodos obx = new Metodos();
-      
+
         do {
-            op = Integer.parseInt(JOptionPane.showInputDialog("opciones: \n1 --> TimeLine\n2 --> Buscar\n3 -->  Exit"));
+            op = Integer.parseInt(JOptionPane.showInputDialog("opciones: \n1 --> TimeLine\n2 --> Buscar\n3 --> Publicar un tweet\n4  --> Exit"));
             switch (op) {
                 case 1:
                     obx.timeLine();
@@ -27,10 +29,10 @@ public class ExamenCodTwitter {
                 case 2:
                     obx.buscar();
                     break;
-                //case 3:
-                    //obx.publicar;
-                   // break;
                 case 3:
+                    obx.publicarUnTweet();
+                    break;
+                case 4:
                     System.exit(0);
                 default:
                     System.exit(0);
@@ -38,11 +40,3 @@ public class ExamenCodTwitter {
         } while (op != 0 && op != 4);
     }
 }
-
-        
-            
-        
-    
-    
-    
-
