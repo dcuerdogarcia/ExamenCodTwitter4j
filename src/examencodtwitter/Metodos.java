@@ -29,10 +29,10 @@ public class Metodos {
 
     public Metodos() {
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("Ako7UjY3M9qkf0yRlbgW31D3h")
-                .setOAuthConsumerSecret("WJ3GGGvYyUoSnV0Ag7RwDz8isExrcxNWNZZTozzTSnM2X1dXe4")
-                .setOAuthAccessToken("403449991-2vwfIjdgGOqQcHndqWRwJ8PHxLdHmV3LXYerlmH5")
-                .setOAuthAccessTokenSecret("zrQRIj6NDy9a7O1C1NUTvfbLdSvvl1fEPylZcCLDeqScw");
+                .setOAuthConsumerKey("xxx")
+                .setOAuthConsumerSecret("xxxx")
+                .setOAuthAccessToken("xxxxxxx")
+                .setOAuthAccessTokenSecret("xxxxxxxxxxxxxxx");
         twitter = new TwitterFactory(cb.build()).getInstance();
 
     }
